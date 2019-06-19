@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+<form action="/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    信息 ： <input type="text" name="info">
+    <br>
+    头像： <input type="file" name="head">
+    <br>
+    文件： <input type="file" name="file">
+    <br>
+    <input type="submit" value="上传">
+
+</form>
+</body>
+</html>
